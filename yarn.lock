@@ -932,7 +932,7 @@
     "@babel/plugin-transform-react-jsx-development" "^7.16.0"
     "@babel/plugin-transform-react-pure-annotations" "^7.16.0"
 
-"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   "integrity" "sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ=="
   "resolved" "https://registry.npmmirror.com/@babel/runtime/download/@babel/runtime-7.16.3.tgz?cache=0&sync_timestamp=1636494819594&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.16.3.tgz"
   "version" "7.16.3"
@@ -1060,6 +1060,14 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/hoist-non-react-statics@^3.3.0":
+  "integrity" "sha1-ESSq/lEYy1kZd66xzqrtEHDrA58="
+  "resolved" "https://registry.npmmirror.com/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz?cache=0&sync_timestamp=1637265727153&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fhoist-non-react-statics%2Fdownload%2F%40types%2Fhoist-non-react-statics-3.3.1.tgz"
+  "version" "3.3.1"
+  dependencies:
+    "@types/react" "*"
+    "hoist-non-react-statics" "^3.3.0"
+
 "@types/html-minifier-terser@^6.0.0":
   "integrity" "sha512-oh/6byDPnL1zeNXFrDXFLyZjkr1MsBG667IM792caf1L2UPOOMf65NFzjUH/ltyfwjAGfs1rsX1eftK0jC/KIg=="
   "resolved" "https://registry.npmmirror.com/@types/html-minifier-terser/download/@types/html-minifier-terser-6.1.0.tgz"
@@ -1107,10 +1115,39 @@
   "resolved" "https://registry.npmmirror.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz?cache=0&sync_timestamp=1637269948744&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fparse-json%2Fdownload%2F%40types%2Fparse-json-4.0.0.tgz"
   "version" "4.0.0"
 
+"@types/prop-types@*":
+  "integrity" "sha1-/PcgXCXf95Xuea8eMNosl5CAjxE="
+  "resolved" "https://registry.npmmirror.com/@types/prop-types/download/@types/prop-types-15.7.4.tgz"
+  "version" "15.7.4"
+
+"@types/react-redux@^7.1.20":
+  "integrity" "sha1-QvDmGrq7Yh4SxmyW3alMWEI7198="
+  "resolved" "https://registry.npmmirror.com/@types/react-redux/download/@types/react-redux-7.1.20.tgz"
+  "version" "7.1.20"
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    "hoist-non-react-statics" "^3.3.0"
+    "redux" "^4.0.0"
+
+"@types/react@*":
+  "integrity" "sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg=="
+  "resolved" "https://registry.npmmirror.com/@types/react/download/@types/react-17.0.37.tgz"
+  "version" "17.0.37"
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    "csstype" "^3.0.2"
+
 "@types/retry@^0.12.0":
   "integrity" "sha1-2PHA0Nwjr61twWqemToIZXdLQGU="
   "resolved" "https://registry.npmmirror.com/@types/retry/download/@types/retry-0.12.1.tgz?cache=0&sync_timestamp=1637270516824&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fretry%2Fdownload%2F%40types%2Fretry-0.12.1.tgz"
   "version" "0.12.1"
+
+"@types/scheduler@*":
+  "integrity" "sha1-GmL4lSVyPd4kuhsBsJK/XfitTTk="
+  "resolved" "https://registry.npmmirror.com/@types/scheduler/download/@types/scheduler-0.16.2.tgz?cache=0&sync_timestamp=1637270013832&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fscheduler%2Fdownload%2F%40types%2Fscheduler-0.16.2.tgz"
+  "version" "0.16.2"
 
 "@webassemblyjs/ast@1.11.1":
   "integrity" "sha1-K/12fq4aaZb0Mv9+jX/HVnnAtqc="
@@ -2163,6 +2200,11 @@
   "integrity" "sha1-N3QZGZA7hoVl4cCep0dEXNGJg+4="
   "resolved" "https://registry.npm.taobao.org/cssesc/download/cssesc-3.0.0.tgz"
   "version" "3.0.0"
+
+"csstype@^3.0.2":
+  "integrity" "sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA=="
+  "resolved" "https://registry.npmmirror.com/csstype/download/csstype-3.0.10.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcsstype%2Fdownload%2Fcsstype-3.0.10.tgz"
+  "version" "3.0.10"
 
 "dashdash@^1.12.0":
   "integrity" "sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA="
@@ -3258,6 +3300,13 @@
   "version" "5.1.0"
   dependencies:
     "@babel/runtime" "^7.7.6"
+
+"hoist-non-react-statics@^3.3.0", "hoist-non-react-statics@^3.3.2":
+  "integrity" "sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U="
+  "resolved" "https://registry.nlark.com/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz"
+  "version" "3.3.2"
+  dependencies:
+    "react-is" "^16.7.0"
 
 "hosted-git-info@^2.1.4":
   "integrity" "sha1-3/wL+aIcAiCQkPKqaUKeFBTa8/k="
@@ -5195,10 +5244,27 @@
     "object-assign" "^4.1.1"
     "scheduler" "^0.20.2"
 
-"react-is@^16.12.0", "react-is@^16.8.1":
+"react-is@^16.12.0", "react-is@^16.7.0", "react-is@^16.8.1":
   "integrity" "sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ="
   "resolved" "https://registry.npmmirror.com/react-is/download/react-is-16.13.1.tgz"
   "version" "16.13.1"
+
+"react-is@^17.0.2":
+  "integrity" "sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA="
+  "resolved" "https://registry.npmmirror.com/react-is/download/react-is-17.0.2.tgz"
+  "version" "17.0.2"
+
+"react-redux@^7.2.6":
+  "integrity" "sha1-SWM6JP5VK1+cr1j+uKE4k23f6ao="
+  "resolved" "https://registry.npmmirror.com/react-redux/download/react-redux-7.2.6.tgz?cache=0&sync_timestamp=1637424929776&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-redux%2Fdownload%2Freact-redux-7.2.6.tgz"
+  "version" "7.2.6"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@types/react-redux" "^7.1.20"
+    "hoist-non-react-statics" "^3.3.2"
+    "loose-envify" "^1.4.0"
+    "prop-types" "^15.7.2"
+    "react-is" "^17.0.2"
 
 "react-router-dom@^6.0.2":
   "integrity" "sha512-cOpJ4B6raFutr0EG8O/M2fEoyQmwvZWomf1c6W2YXBZuFBx8oTk/zqjXghwScyhfrtnt0lANXV2182NQblRxFA=="
@@ -5215,7 +5281,7 @@
   dependencies:
     "history" "^5.1.0"
 
-"react@*", "react@^17.0.2", "react@>= 16.9.0", "react@>=16.0.0", "react@>=16.8", "react@>=16.9.0", "react@17.0.2":
+"react@*", "react@^16.8.3 || ^17", "react@^17.0.2", "react@>= 16.9.0", "react@>=16.0.0", "react@>=16.8", "react@>=16.9.0", "react@17.0.2":
   "integrity" "sha1-0LXMUW0p6z7uOD91tihkz7aAADc="
   "resolved" "https://registry.npmmirror.com/react/download/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -5285,6 +5351,13 @@
   dependencies:
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
+
+"redux@^4.0.0":
+  "integrity" "sha1-FA81Qm2Zu0cpr3YK/PeeqqxAcQQ="
+  "resolved" "https://registry.npmmirror.com/redux/download/redux-4.1.2.tgz"
+  "version" "4.1.2"
+  dependencies:
+    "@babel/runtime" "^7.9.2"
 
 "regenerate-unicode-properties@^9.0.0":
   "integrity" "sha1-VNCccRXh9T3CMUqXSzLBw0Tv4yY="

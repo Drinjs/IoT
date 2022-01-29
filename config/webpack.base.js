@@ -72,14 +72,19 @@ const webpackConfigBase = {
         use: ['happypack/loader?id=happyBabel'],
       },
       {
-        test: /\.(css|scss)$/,
+        test: /\.css$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: devMode,
-              reloadAll: devMode,
-            },
+          },
+          "css-loader"
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { 
+            loader: MiniCssExtractPlugin.loader,
           },
           'happypack/loader?id=happyStyle',
         ]

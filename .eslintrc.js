@@ -23,11 +23,14 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime'
   ],
  
   // 自定义规则列表  
   rules: {
     // 强制在每个语句后面使用分号
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "semi": [1, "always"], 
   }
 }
